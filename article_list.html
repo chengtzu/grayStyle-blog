@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Public/static/layui/css/layui.css" />
+    <link rel="stylesheet" href="./Public/static/css/global.css" />
+</head>
+<body>
+    
+    <div class="layui-fluid gd-fluid site-archive-page" >
+       
+        <a href="/" class="logo layui-hide-xs">
+            <svg class="icon svg-icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gray-icon-gui"></use>
+              </svg>
+            <h1>灰色格调</h1>
+        </a>
+        <a href="/" class="menu-xs sidebar-toggler  layui-hide-xs" >
+            <span class="sidebar-toggler-top"></span>
+            <span class="sidebar-toggler-middle"></span>
+            <span class="sidebar-toggler-bottom"></span>
+        </a>
+        <div class="gd-header-sm">
+            <a href="/" class="logo-sm ">
+                <svg class="icon svg-icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gray-icon-gui"></use>
+                  </svg>
+                <!-- <h1>灰色格调</h1> -->
+            </a>
+            <a href="/" class=" sidebar-toggler menu-sm" >
+                <span class="sidebar-toggler-top"></span>
+                <span class="sidebar-toggler-middle"></span>
+                <span class="sidebar-toggler-bottom"></span>
+            </a>
+        </div>
+        <div class="site-header ">
+                    <h2 class="gd-title"><span class="gd-line">灰色格调</span></h2>
+                    
+                    <div class="gd-desc">
+                           <p>我希望这生活像歌一样，充满了绚烂的光。</p>
+                    </div>
+                    <div class="icon-list">
+                        <a href="javascript:(0);" data-text="5036744" class="layui-icon layui-icon-login-wechat"></a>
+                        <a href="javascript:(0);" class="layui-icon layui-icon-login-qq"></a>
+                        <a href="javascript:(0);" data-text="@" class="layui-icon layui-icon-login-weibo"></a>
+                        <a href="javascript:(0);"  class="iconfont gray-icon-github"></a>
+                    </div>
+        </div>
+
+        <div class="gd-content gd-content-right article-list">
+            <div class="site-archive-header-menu">
+                <nav class="top-nav">
+                    <a href="/about" class="nav-link ">关于</a>
+                    <a href="/archive" class="nav-link ">归档</a>
+                    <a href="/archive" class="nav-link ">邻居</a>
+                </nav>
+            
+            <nav class="site-categories">
+                <a href="#all" class="category active nav-link">全部</a>
+                <a href="#折腾" class="category nav-link" >折腾</a>
+                <a href="#游记" class="category nav-link" >游记</a>
+                <a href="#戏言" class="category nav-link" >戏言</a>
+                <a href="#读书" class="category nav-link" >读书</a>
+                <a href="#生活" class="category nav-link" >生活</a>
+              </nav>
+              </div>
+            <div class="site-main ">
+                <div class="page-header">
+                    <h1 class="gd-title "><span class="gd-line text-size-1_5">折腾</span>下的内容</h1>
+                </div>
+                
+                <ul class="archive-list">
+                        <li class="post-list-item fade" data-category="生活">
+                          <a href="/blog/something-in-spring">
+                            <span class="archive-time">2020-03-22</span>
+                            <span class="archive-title">春日杂记</span>
+                          </a>
+                        </li>
+                        <li class="post-list-item" data-category="生活">
+                          <a href="/blog/the-flowers-and-sun-in-spring">
+                            <span class="archive-time">2020-03-15</span>
+                            <span class="archive-title">春天，朝看花，晚看夕阳</span>
+                          </a>
+                        </li>
+                        <li class="post-list-item" data-category="读书">
+                          <a href="/blog/leisure-of-acient-times">
+                            <span class="archive-time">2020-03-07</span>
+                            <span class="archive-title">古人之闲适</span>
+                          </a>
+                        </li>
+                        
+                        <li class="post-list-item" data-category="生活">
+                            <a href="/blog/the-flowers-and-sun-in-spring">
+                              <span class="archive-time">2020-03-15</span>
+                              <span class="archive-title">春天，朝看花，晚看夕阳</span>
+                            </a>
+                          </li>
+                          <li class="post-list-item" data-category="读书">
+                            <a href="/blog/leisure-of-acient-times">
+                              <span class="archive-time">2020-03-07</span>
+                              <span class="archive-title">古人之闲适</span>
+                            </a>
+                          </li>
+                </ul>
+            </div>
+             
+        </div>
+        <footer class="site-footer">
+            © 2020<a href="/">橙子成</a>
+        </footer>
+    </div>
+     
+    <script src="./Public/static/layui/layui.all.js"></script>
+    <script src="./Public/static/js/iconfont.js" ></script>
+    <script >
+        var layer = layui.layer
+            ,$ = layui.$;
+            $('.icon-list a').mouseover(function(){
+                 let text = $(this).data('text');
+                 if(text){
+                    layer.tips(text, $(this), {
+                        tips: [1, '#6c757d'],
+                        time: 1500
+                    });
+                 }
+                
+            })
+    </script>
+</body>
+</html>

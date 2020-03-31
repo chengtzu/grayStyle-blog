@@ -1,0 +1,323 @@
+@font-face{
+    font-family: 'Avillar';
+    src : url('../../font/Avillar.otf');
+}
+body{
+    // font-family:'Avillar',Arial,'Times New Roman','Microsoft YaHei',SimHei;   
+    // font: 14px 'Avillar',Arial,'Times New Roman','Microsoft YaHei',SimHei;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
+	color:#333;
+}
+html,body{
+	height: 100%;
+}
+.layui-header{
+    height: 70px;
+}
+// .site-top-title{
+//     padding-top: 10px;
+//     h1{
+//         font-size: 2.5rem;
+//         padding: 10px 0;
+//     }
+//     p{
+//         font-size: 1rem;
+//         color: #666;
+//     }
+// }
+.layui-header {
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	z-index: 1000;
+	padding: 0 50px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+}
+
+// .layui-header .layui-logo {
+// 	height: 70px;
+// 	line-height: 70px;
+// 	display: inline-block;
+// 	font-size: 22px;
+// 	font-weight: 600;
+// 	color: #333;
+// 	// padding-left: 42px;
+// 	background-image: url("../images/logo.png");
+// 	background-size: 32px;
+// 	background-position: 0 19px;
+// 	background-repeat: no-repeat
+// }
+.layui-header .layui-nav {
+	padding: 0;
+	background-color: transparent;
+	position: absolute;
+	right: 50px;
+	top: 0
+}
+
+.layui-header .layui-nav>.layui-nav-item {
+	padding: 0 20px
+}
+
+.layui-header .layui-nav>.layui-nav-item>a {
+	height: 70px;
+	line-height: 70px;
+	color: #666;
+	font-size: 16px;
+	padding: 0 5px;
+	position: relative;
+	cursor: pointer
+}
+.layui-header .layui-nav a.top-search i{
+    font-size: 1.2rem;
+}
+.layui-header .layui-nav>.layui-nav-item>a>span {
+	max-width: 90px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.layui-header .layui-nav>.layui-nav-item>a:hover,.layui-header .layui-nav>.layui-nav-item.layui-this>a {
+	color: #3ec483
+}
+
+.layui-header .layui-nav .layui-nav-more {
+	border-color: #999 transparent transparent
+}
+
+.layui-header .layui-nav .layui-nav-mored {
+	border-color: transparent transparent #999
+}
+
+.layui-header .layui-nav>.layui-nav-item>a:hover>.layui-nav-more,.layui-header .layui-nav>.layui-nav-item.layui-this>a>.layui-nav-more {
+	border-color: #3ec483 transparent transparent
+}
+
+.layui-header .layui-nav>.layui-nav-item>a:hover>.layui-nav-mored,.layui-header .layui-nav>.layui-nav-item.layui-this>a>.layui-nav-mored {
+	border-color: transparent transparent #3ec483
+}
+
+.layui-header .layui-nav .layui-nav-bar,.layui-header .layui-nav>.layui-nav-item:after {
+	display: none
+}
+
+.layui-header .layui-nav>.layui-nav-item>a:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 0;
+	margin: 0 auto;
+	height: 3px;
+	background-color: #3ec483;
+	transition: width .2s ease-out
+}
+
+.layui-header .layui-nav>.layui-nav-item.layui-this>a:after,.layui-header .layui-nav>.layui-nav-item>a:hover:after {
+	width: 100%
+}
+
+.layui-header .layui-nav>.layui-nav-item>.layui-nav-child {
+	top: 75px;
+	border-radius: 0;
+	border-color: #dfdfdf;
+	box-shadow: 0 2px 5px rgba(0,0,0,.1);
+	min-width: unset;
+	width: 120px;
+	right: 0;
+	margin: 0 auto
+}
+
+.layui-header .layui-nav>.layui-nav-item.nav-btn-login {
+	height: 70px;
+	line-height: 70px;
+	padding: 0 0 0 15px
+}
+
+.layui-header .layui-nav>.layui-nav-item.nav-btn-login>a {
+	padding: 0 15px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 35px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: rgba(0,0,0,.08)
+}
+
+.layui-header .layui-nav>.layui-nav-item.nav-btn-login>a:hover {
+	color: #666;
+	background-color: rgba(0,0,0,.15)
+}
+
+.layui-header .layui-nav>.layui-nav-item.nav-btn-login>a:after {
+	display: none
+}
+
+.layui-header .nav-toggle {
+	display: none
+}
+@media screen and (max-width:935px) {
+	body {
+		padding-top: 10px
+	}
+
+	.layui-header {
+		padding: 0 15px
+	}
+
+	.layui-header .layui-logo {
+		height: 55px;
+		line-height: 55px;
+		background-position: 0 12px
+	}
+
+	.layui-header .layui-nav {
+		position: absolute;
+		top: 50px;
+		right: 0;
+		width: 160px;
+		border-radius: 5px;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0,0,0,.15);
+		overflow: hidden;
+		transform: scale(0);
+		transform-origin: top right;
+		opacity: 0;
+		-webkit-transition: all .3s;
+		transition: all .3s;
+		max-height: 380px;
+		max-height: -moz-calc(100vh - 60px);
+		max-height: -webkit-calc(100vh - 60px);
+		max-height: calc(100vh - 60px);
+		overflow-y: auto
+	}
+
+	.layui-header .layui-nav .layui-nav-item {
+		display: block;
+		padding: 0
+	}
+
+	.layui-header .layui-nav .layui-nav-item>a {
+		line-height: 40px;
+		height: 40px;
+		text-align: center;
+		font-size: 14px
+	}
+
+	.layui-header .layui-nav .layui-nav-item>a .layui-nav-more {
+		right: 15px
+	}
+
+	.layui-header .layui-nav .layui-nav-item.layui-this>a:after,.layui-header .layui-nav .layui-nav-item>a:hover:after {
+		display: none
+	}
+
+	.layui-header .layui-nav .layui-nav-item.layui-this>a {
+		color: #fff;
+		background-color: #3ec483
+	}
+
+	.layui-header .layui-nav>.layui-nav-item.nav-btn-login {
+		line-height: unset;
+		height: unset;
+		padding: 0
+	}
+
+	.layui-header .layui-nav>.layui-nav-item.nav-btn-login>a {
+		line-height: 40px;
+		height: 40px;
+		background-color: transparent;
+		display: block;
+		border-radius: 0
+	}
+
+	.layui-header .layui-nav>.layui-nav-item.nav-btn-login>a:hover {
+		background-color: transparent;
+		color: #3ec483
+	}
+
+	.layui-header .layui-nav>.layui-nav-item>.layui-nav-child {
+		position: static;
+		background-color: transparent;
+		box-shadow: none;
+		animation: none;
+		border: 0;
+		margin: 0;
+		width: 100%
+	}
+
+	.layui-header .layui-nav>.layui-nav-item>.layui-nav-child a {
+		text-align: center;
+		line-height: 40px;
+		height: 40px;
+		font-size: 14px
+	}
+
+	.layui-header .layui-nav>.layui-nav-item>.layui-nav-child a:hover {
+		background-color: transparent;
+		color: #3ec483
+	}
+
+	.layui-header .nav-toggle {
+		line-height: 53px;
+		height: 55px;
+		cursor: pointer;
+		display: block;
+		padding: 0 3px;
+		color: #666
+	}
+
+	.layui-header .nav-toggle>i {
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 600;
+		vertical-align: middle;
+		-webkit-transition: all .3s;
+		transition: all .3s;
+		width: 24px;
+		height: 24px;
+		line-height: 24px
+	}
+
+	.layui-header .ew-nav-group {
+		position: absolute;
+		right: 5px;
+		top: 0
+	}
+
+	.layui-header .ew-nav-group:hover>.layui-nav {
+		transform: scale(1);
+		opacity: 1
+	}
+
+	.layui-header .ew-nav-group:hover .nav-toggle>i {
+		transform: rotate(-90deg)
+	}
+}
+@media screen and (min-width: 1900px){
+    .layui-container {
+        width: 1440px;
+    }
+}
+
+.first-box{
+	height: 100%;
+	background: #fff;
+	.web-site-title{
+		overflow: hidden;
+		padding: 10px 0;
+		h1{
+			font-size: 2.5rem;
+			padding: 10px 0;
+		}
+		p{
+			font-size: 1rem;
+			color: #666;
+		}
+	}
+}
