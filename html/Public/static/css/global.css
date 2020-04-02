@@ -320,6 +320,9 @@ article {
   color: #8799a3;
   font-size: 0.935rem;
 }
+.post-header .post-meta .tag {
+  margin: 0 0.5rem;
+}
 .post-content {
   padding: 1.5rem 0;
   margin-bottom: 4rem;
@@ -477,6 +480,7 @@ article {
   padding: 0.85em 1em;
   margin: 0 0 1.275em;
   background: #cce6ff;
+  max-height: 220px;
 }
 .content pre > code {
   display: inline;
@@ -547,6 +551,7 @@ article {
   padding: 0 15px;
   color: var(--gray);
   border-left: 4px solid #d2f1f0;
+  font-size: 0.8rem;
 }
 .content blockquote:first-child {
   margin-top: 0;
@@ -672,6 +677,12 @@ dt:hover {
 }
 .post-meta span a {
   color: #8799a3;
+}
+.page {
+  text-align: center;
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+  background-color: #6c757d;
 }
 @media screen and (max-width: 768px) {
   #sideBar {

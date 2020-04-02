@@ -409,6 +409,9 @@ article{
 	.post-meta {
 		color: @grey;
 		font-size: .935rem;
+		.tag{
+			margin: 0 .5rem;
+		}
 	}
 }
 
@@ -550,7 +553,7 @@ article{
 	margin: 0;
 	padding: 0;
 	border: none;
-	color: inherit
+	color: inherit;
 }
 
 .content pre {
@@ -558,7 +561,8 @@ article{
 	word-wrap: normal;
 	padding: .85em 1em;
 	margin: 0 0 1.275em;
-	background: @blue-light
+	background: @blue-light;
+	max-height: 220px;
 }
 
 .content pre>code {
@@ -634,7 +638,8 @@ article{
 	margin: 0 0 .85em;
 	padding: 0 15px;
 	color: var(--gray);
-	border-left: 4px solid @cyan-light
+	border-left: 4px solid @cyan-light;
+	font-size: .8rem;
 }
 
 .content blockquote:first-child {
@@ -780,6 +785,12 @@ article{
 			color: @grey;
 		}
 	}
+}
+.page{
+	text-align: center;
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #6c757d;
 }
 @media screen and (max-width:768px) {
 	#sideBar{
